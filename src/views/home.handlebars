@@ -1,0 +1,24 @@
+{{#if user}}
+<p>Bienvenidx {{user.name}}</p>
+<button onclick="window.location.href='/logout'"> <a href="/logout"></a>Cerrar Sesión</button>
+
+{{else}}
+<h1>Bienvenidx</h1>
+
+<section class="buttons">
+    <div class="container">
+
+        <button onclick="window.location.href='/register'" class="btn btn-5">Crear
+            Cuenta</button>
+        <button onclick="window.location.href='/login'" class="btn btn-5">Iniciar Sesión</button>
+
+    </div>
+</section>
+
+{{/if}}
+
+
+
+
+
+<script src="../../public/js/main.js"></script>

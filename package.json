@@ -1,0 +1,33 @@
+{
+  "name": "class-zero-hands-on-labs",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Project template with Express and Handlebars",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "María José Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "class-zero-hands-on-labs": "file:",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^4.18.2",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.2",
+    "passport": "^0.7.0",
+    "passport-github2": "^0.1.12",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.6",
+    "nodemon": "^3.1.7"
+  }
+}

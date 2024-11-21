@@ -1,0 +1,41 @@
+{{title}}
+<hr>
+
+{{#if error}}
+<p>{{error}}</p>
+{{/if}}
+
+
+<h2>Iniciar Sesión</h2>
+<form id="loginForm" action="/api/login" method="POST" class="formulario">
+
+    <div class="input-container">
+        <label for="email">Email</label>
+        <input type="text" id="email" required name="email">
+    </div>
+
+    <div class="input-container">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" required name="password">
+    </div>
+
+    <button type="submit" class="button">Iniciar Sesión</button>
+
+    <button class="button"><a href="/api/login/github">Iniciar con Github</a></button>
+
+</form>
+
+
+{{!-- <p>{{notifications.message}}</p> --}}
+<br>
+<div class="display-row">
+    <a href="/register" class="button">Crear Cuenta</a>
+    <a href="/recovery-password" class="button">Olvidé Mi Contraseña</a>
+</div>
+
+
+
+
+<p>{{notifications.message}}</p>
+
+<script src="../../public//js/login.js"></script>
